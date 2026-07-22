@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base target="_blank">
+<meta name="description" content="Portfolio of Roger Wong: editor and documentation engineer. Platform standards, compliance documentation, brand guidelines, and AI-assisted publishing tooling.">
+<title>Roger Wong · Editor &amp; Documentation Engineer · Portfolio</title>
+<style>
+  :root{
+    --navy:#0f2b46; --blue:#1f5f8b; --ink:#1a1a1a; --muted:#555;
+    --line:#c3ccd4; --bg:#fdfdfc; --card:#ffffff;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  main{max-width:760px; margin:0 auto; padding:3rem 1.25rem 4rem}
+  header.site h1{font-size:2rem; color:var(--navy); margin:0 0 .25rem}
+  header.site p.tag{margin:0 0 .4rem; font-size:1.05rem; color:var(--blue); font-weight:600}
+  header.site p.contact{margin:0; color:var(--muted); font-size:.95rem}
+  header.site{border-bottom:3px solid var(--navy); padding-bottom:1.1rem; margin-bottom:1.6rem}
+  p.intro{font-size:1.02rem}
+  p.note{color:var(--muted); font-size:.9rem; border-left:3px solid var(--line); padding-left:.75rem}
+  section{margin-top:2.2rem}
+  h2{
+    font-size:1.05rem; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--navy); border-bottom:1px solid var(--line); padding-bottom:.35rem; margin:0 0 1rem;
+  }
+  article{margin:0 0 1.1rem}
+  article h3{font-size:1rem; margin:0 0 .15rem}
+  article h3 a{color:var(--blue); text-decoration:none}
+  article h3 a:hover, article h3 a:focus{text-decoration:underline}
+  article p{margin:0; font-size:.95rem}
+  article p.role{color:var(--ink)}
+  article p.links{font-size:.82rem; color:var(--muted); margin-top:.15rem}
+  article p.links a{color:var(--muted)}
+  p.more{color:var(--muted); font-size:.9rem; line-height:1.7}
+  p.more a{color:var(--blue)}
+  img.thumb{float:right; height:auto; margin:.2rem 0 .8rem 1.2rem; border:1px solid var(--line); border-radius:4px; max-width:45%}
+  a[data-lightbox] img.thumb{cursor:zoom-in}
+  dialog#lightbox{border:0; padding:0; background:transparent; max-width:none; max-height:none; overflow:visible}
+  dialog#lightbox img{display:block; max-width:92vw; max-height:92vh; width:auto; height:auto; border-radius:4px; box-shadow:0 8px 40px rgba(0,0,0,.55)}
+  dialog#lightbox::backdrop{background:rgba(12,17,22,.78); cursor:zoom-out}
+  footer{margin-top:3rem; border-top:1px solid var(--line); padding-top:1rem; color:var(--muted); font-size:.88rem}
+  a:focus{outline:2px solid var(--blue); outline-offset:2px}
+  @media print{
+    body{background:#fff; font-size:12px}
+    main{max-width:100%; padding:0}
+    article p.links{display:block}
+    a{color:#000}
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="site">
+    <h1>Roger Wong</h1>
+    <p class="tag">Editor &amp; Documentation Engineer</p>
+    <p class="contact">rogerawong@gmail.com &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/rogerawong/">linkedin.com/in/rogerawong</a></p>
+  </header>
+
+  <p class="intro">Twenty-five years making complex technical subjects clear, accurate, and consistent: platform standards, compliance documentation, brand guidelines, and the AI-assisted tooling that scales them. Most recently at Meta Reality Labs, owning editorial standards for the Meta Quest developer platform.</p>
+
+  <p class="note">Everything below is published on Meta&rsquo;s public developer site. My role and dates are stated per item; Meta&rsquo;s team has maintained many of these pages since I wrote them, which is what good documentation systems are for. Featured entries link archived July&nbsp;2026 snapshots in case pages move.</p>
+
+  <section aria-labelledby="standards">
+    <h2 id="standards">Platform standards &amp; governance</h2>
+    <article>
+      <h3><a href="https://developers.meta.com/horizon/resources/publish-quest-req/">Meta Quest Virtual Reality Check (VRC) guidelines</a></h3>
+      <p class="role">The certification requirements every Meta Quest app must meet for store distribution. I created the initial VRC documentation set in 2017 and expanded it after returning to Meta in 2020.</p>
+      <p class="links"><a href="https://web.archive.org/web/20260721002609/https://developers.meta.com/horizon/resources/publish-quest-req/">archived snapshot</a></p>
+    </article>
+    <article>
+      <h3><a href="https://developers.meta.com/horizon/resources/publish-brand-guidelines">Meta Quest brand guidelines</a></h3>
+      <p class="role">Wrote the developer-facing brand guidelines for Meta Quest: translated marketing&rsquo;s brand standards into the rules third-party developers follow to pass store review, and encoded the brand terminology into automated linting so consistency stopped depending on memory.</p>
+      <p class="links"><a href="https://web.archive.org/web/20260721002637/https://developers.meta.com/horizon/resources/publish-brand-guidelines/">archived snapshot</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="compliance">
+    <h2 id="compliance">Compliance &amp; regulated writing</h2>
+    <article>
+      <h3><a href="https://developers.meta.com/horizon/resources/publish-data-protection-assessment/">Data Protection Assessment</a></h3>
+      <p class="role">Wrote the original developer guidance in 2021 on a 10-day regulatory deadline, first draft in four days. Developer failure rates fell from 60% to 2.6% after clearer guidance shipped.</p>
+      <p class="links"><a href="https://web.archive.org/web/20260721002534/https://developers.meta.com/horizon/resources/publish-data-protection-assessment/">archived snapshot</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="revenue">
+    <h2 id="revenue">Documentation that moved revenue</h2>
+    <article>
+      <h3><a href="https://developers.meta.com/horizon/resources/try-before-you-buy/">Try Before You Buy</a></h3>
+      <p class="role">Wrote the launch documentation and the dashboard revision, with specific guidance on maximizing the feature&rsquo;s value. Early results showed a 25% sales lift for developers who fully adopted it.</p>
+      <p class="links"><a href="https://web.archive.org/web/20260721002625/https://developers.meta.com/horizon/resources/try-before-you-buy/">archived snapshot</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="gtm">
+    <h2 id="gtm">Go-to-market voice</h2>
+    <article>
+      <h3>Meta&rsquo;s GTM strategy guides for VR developers</h3>
+      <p class="role">Conceived the series after realizing developers treat platform documentation as authoritative business advice, validated the need through indie-developer interviews at GDC, and wrote all four guides with product marketing:
+      <a href="https://developers.meta.com/horizon/resources/gtm-marketing-plan/">marketing plan</a>,
+      <a href="https://developers.meta.com/horizon/resources/gtm-influencer-marketing/">influencer marketing</a>,
+      <a href="https://developers.meta.com/horizon/resources/gtm-social-media/">social media</a>, and
+      <a href="https://developers.meta.com/horizon/resources/gtm-marketing-assets/">marketing assets</a>.</p>
+      <p class="links">archived: <a href="https://web.archive.org/web/20260721002753/https://developers.meta.com/horizon/resources/gtm-marketing-plan/">plan</a> · <a href="https://web.archive.org/web/20260721002843/https://developers.meta.com/horizon/resources/gtm-influencer-marketing/">influencer</a> · <a href="https://web.archive.org/web/20260721003005/https://developers.meta.com/horizon/resources/gtm-social-media/">social</a> · <a href="https://web.archive.org/web/20260721003046/https://developers.meta.com/horizon/resources/gtm-marketing-assets/">assets</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="editing">
+    <h2 id="editing">Editing others&rsquo; work</h2>
+    <article>
+      <h3><a href="https://developers.meta.com/horizon/documentation/unreal/unreal-tonemapping">Tone mapping in Unreal Engine</a></h3>
+      <p class="role">Edited this specialist-authored graphics guide and carried it through legal review to publication (2021). The edit is invisible in the finished page, which is the measure of it done well: what shows is an engineer&rsquo;s deep expertise arriving readable, shipped, and legally clean.</p>
+      <p class="links"><a href="https://web.archive.org/web/20260721002609/https://developers.meta.com/horizon/documentation/unreal/unreal-tonemapping/">archived snapshot</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="technical">
+    <h2 id="technical">Deep technical writing</h2>
+    <article>
+      <h3><a href="https://developers.meta.com/horizon/documentation/native/android/gpu-tiled/">Mobile GPUs and tiled rendering</a></h3>
+      <p class="role">Authored this architecture explainer: why mobile GPUs render in tiles, taught through numbers that carry the argument (a 300-watt desktop power budget shrunk to six; an eye buffer split into 135 tiles). The mental model beneath the platform&rsquo;s optimization guides.</p>
+      <p class="links"><a href="https://web.archive.org/web/20260721211248/https://developers.meta.com/horizon/documentation/native/android/gpu-tiled/">archived snapshot</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="voice">
+    <h2 id="voice">Voice, tuned to audience</h2>
+    <article>
+      <a href="https://www.vaporworks.net/wp-content/uploads/2021/02/chaos_freestyle_v3.1.pdf"><img class="thumb" src="chaos-cover.jpg" width="200" alt="Cover of the Chaos Freestyle board manual: a White Sands dune photograph above the Vaporworks Chaos Freestyle masthead."></a>
+      <h3><a href="https://www.vaporworks.net/wp-content/uploads/2021/02/chaos_freestyle_v3.1.pdf">Chaos board manual for the ICD Freestyle paintball marker</a></h3>
+      <p class="role">Firmware documentation written on contract for VaporWorks in the early 2000s, for an audience of teenagers with short attention spans: labeled board diagrams, blink-code tables, and safety warnings built to stick (&ldquo;broken paint is liquid sandpaper&rdquo;). The same technical rigor as everything above, with the register dialed to the reader in front of it.</p>
+      <p class="links"><a href="https://web.archive.org/web/20240627133150/https://www.vaporworks.net/wp-content/uploads/2021/02/chaos_freestyle_v3.1.pdf">archived snapshot</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="more">
+    <h2 id="more">Additional published work</h2>
+    <p class="more">Supporting pieces from the same platform, listed without ceremony:
+    <a href="https://developers.meta.com/horizon/resources/publish-sec-details/">Data security best practices</a> ·
+    <a href="https://developers.meta.com/horizon/resources/publish-data-use/">Data Use Checkup</a> ·
+    <a href="https://developers.meta.com/horizon/resources/pre-launch-listings/">Pre-launch listings and sales</a> ·
+    <a href="https://developers.meta.com/horizon/resources/profiles/">Developer Profiles</a> ·
+    <a href="https://developers.meta.com/horizon/resources/publish-pdp-360previews/">360&deg; preview graphics</a> ·
+    <a href="https://developers.meta.com/horizon/documentation/unreal/po-quest-boost/">Boosting CPU and GPU levels</a> ·
+    <a href="https://developers.meta.com/horizon/resources/video-capture-mr-vr/">Capture MR and VR apps for publishing</a></p>
+  </section>
+
+  <section aria-labelledby="tooling">
+    <h2 id="tooling">AI-assisted publishing tooling</h2>
+    <article>
+      <h3>Editorial governance at scale</h3>
+      <p class="role">Encoded Meta&rsquo;s house style into Vale rules and custom linters used by roughly 100 engineers and writers, with publish gates that held risky changes for human review. The automated half of an editorial gate; I was the human half.</p>
+    </article>
+    <article>
+      <h3>Video-to-documentation pipeline</h3>
+      <p class="role">Built an AI pipeline converting conference-session videos into searchable, publishable developer guides, surfacing knowledge that was otherwise locked in video.</p>
+    </article>
+    <article>
+      <a href="toc-canvas-full.png" data-lightbox data-alt="The TOC Storyboard canvas: fourteen color-coded section cards holding 377 topics of Meta&rsquo;s Distribute documentation, with minimap and AI Assist toolbar."><img class="thumb" src="toc-canvas.jpg" width="280" alt="The TOC Storyboard canvas: fourteen color-coded section cards holding 377 topics of Meta&rsquo;s Distribute documentation, with minimap and AI Assist toolbar."></a>
+      <h3>TOC Storyboard</h3>
+      <p class="role">An LLM-backed information architecture tool for visualizing and reorganizing content structures, built with Claude. Proof-of-concept in four hours; multi-user, multi-tenant prototype on Firebase three days later. As the models improved, the collaboration seat went to an LLM partner instead of a second human; a clean-room open-source successor is now in development, pair-built with Claude Code.</p>
+      <p class="links"><a href="toc-canvas-full.png" data-lightbox data-alt="The TOC Storyboard canvas: fourteen color-coded section cards holding 377 topics of Meta&rsquo;s Distribute documentation, with minimap and AI Assist toolbar.">full-size screenshot</a></p>
+    </article>
+  </section>
+
+  <footer>
+    <p>Earlier career: SDK documentation at Magic Leap; documentation leadership at SolarWinds; nine years of compiler and console-platform documentation at Metrowerks; freelance games journalism (<em>PC Gamer UK</em>) and internationally distributed strategy guides. BSc (Honours), Computer Engineering, Brunel University.</p>
+    <p>R&eacute;sum&eacute; available on request. Archived snapshots via the Internet Archive, July 2026.</p>
+  </footer>
+</main>
+<dialog id="lightbox" aria-label="Full-size image viewer">
+  <img src="" alt="">
+</dialog>
+<script>
+(function () {
+  var dlg = document.getElementById('lightbox');
+  if (!dlg || !dlg.showModal) return;
+  var img = dlg.querySelector('img');
+  var links = document.querySelectorAll('a[data-lightbox]');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      e.preventDefault();
+      img.src = this.getAttribute('href');
+      img.alt = this.getAttribute('data-alt') || 'Full-size image';
+      dlg.showModal();
+      document.documentElement.style.overflow = 'hidden';
+    });
+  }
+  dlg.addEventListener('click', function (e) {
+    if (e.target === dlg) dlg.close();
+  });
+  dlg.addEventListener('close', function () {
+    img.src = '';
+    document.documentElement.style.overflow = '';
+  });
+})();
+</script>
+</body>
+</html>
