@@ -181,7 +181,7 @@
     <h2 id="agents">Documentation for AI agents</h2>
     <article>
       <h3><a href="https://github.com/rogerawong/cudaq-docs-mcp">cudaq-docs-mcp: CUDA-Q documentation, served to AI agents</a></h3>
-      <p class="role">An open-source MCP server that serves NVIDIA CUDA-Q&rsquo;s documentation to AI agents, version-pinned to the developer&rsquo;s installed package: five tools over an offline index of 109 pages, 2,589 API symbols, and 201 runnable examples. The motivating test: asked about a core API, a frontier model offered &ldquo;the shape I remember, not a quotation.&rdquo; With the server connected, the same question returned the exact signature, cited to the installed version&rsquo;s documentation. An unverifiable guess became one cited, version-pinned call. Built and shipped with Claude Code, August 2026; building it surfaced an llms.txt publishing gap on the CUDA-Q docs site, filed upstream with a fix branch ready.</p>
+      <p class="role">An open-source MCP server that serves NVIDIA CUDA-Q&rsquo;s documentation to AI agents, version-pinned to the developer&rsquo;s installed package: five tools over an offline index of 109 pages, 2,589 API symbols, and 201 runnable examples. Without this MCP server, AI answers from a blend of docs from different versions of CUDA-Q, regardless of the version the developer actually has installed.  </p>
       <p class="links"><a href="https://github.com/rogerawong/cudaq-docs-mcp">the repository</a> · <a href="https://pypi.org/project/cudaq-docs-mcp/">on PyPI</a> · <a href="https://github.com/NVIDIA/cuda-quantum/issues/5100">the upstream issue (NVIDIA/cuda-quantum #5100)</a></p>
     </article>
   </section>
