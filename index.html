@@ -63,7 +63,7 @@
 
   <p class="intro">Twenty-five years making complex technical subjects clear, accurate, and consistent: platform standards, compliance documentation, brand guidelines, and the AI-assisted tooling that scales them. Most recently at Meta Reality Labs, owning developer education for the Meta Quest developer platform.</p>
 
-  <p class="note">Everything below is published on Meta&rsquo;s public developer site. My role and dates are stated per item; Meta&rsquo;s team has maintained many of these pages since I wrote them, which is what good documentation systems are for. Featured entries link archived July&nbsp;2026 snapshots in case pages move.</p>
+  <p class="note">The Meta work below is published on Meta&rsquo;s public developer site. My role and dates are stated per item; Meta&rsquo;s team has maintained many of these pages since I wrote them, which is what good documentation systems are for. Featured entries link archived July&nbsp;2026 snapshots in case pages move.</p>
 
   <section aria-labelledby="standards">
     <h2 id="standards">Platform standards &amp; governance</h2>
@@ -77,6 +77,43 @@
       <h3><a href="https://developers.meta.com/horizon/resources/publish-brand-guidelines">Meta Quest brand guidelines</a></h3>
       <p class="role">Wrote the developer-facing brand guidelines for Meta Quest: translated marketing&rsquo;s brand standards into the rules third-party developers follow to pass store review, and encoded the brand terminology into automated linting so consistency stopped depending on memory.</p>
       <p class="links"><a href="https://web.archive.org/web/20260721002637/https://developers.meta.com/horizon/resources/publish-brand-guidelines/">archived snapshot</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="tooling">
+    <h2 id="tooling">AI-assisted publishing tooling</h2>
+    <article>
+      <h3>Editorial governance at scale</h3>
+      <p class="role">Encoded Meta&rsquo;s house style into Vale rules and custom linters used by roughly 100 engineers and writers, with publish gates that held risky changes for human review. The automated half of an editorial gate; I was the human half.</p>
+    </article>
+    <article>
+      <h3>Video-to-documentation pipeline</h3>
+      <p class="role">Built an AI pipeline converting conference-session videos into searchable, publishable developer guides, surfacing knowledge that was otherwise locked in video.</p>
+    </article>
+  </section>
+
+  <section aria-labelledby="fabula">
+    <h2 id="fabula">Information architecture tooling</h2>
+<article>
+      <a href="toc-canvas-full.png" data-lightbox data-alt="The TOC Storyboard canvas: fourteen color-coded section cards holding 377 topics of Meta&rsquo;s Distribute documentation, with minimap and AI Assist toolbar."><img class="thumb" src="toc-canvas.jpg" width="280" alt="The TOC Storyboard canvas: fourteen color-coded section cards holding 377 topics of Meta&rsquo;s Distribute documentation, with minimap and AI Assist toolbar."></a>
+      <h3>TOC Storyboard</h3>
+      <p class="role">An LLM-backed information architecture tool for visualizing and reorganizing content structures, built with Claude. Proof-of-concept in four hours; multi-user, multi-tenant prototype on Firebase three days later. As the models improved, the collaboration seat went to an LLM partner instead of a second human.</p>
+      <p class="links"><a href="toc-canvas-full.png" data-lightbox data-alt="The TOC Storyboard canvas: fourteen color-coded section cards holding 377 topics of Meta&rsquo;s Distribute documentation, with minimap and AI Assist toolbar.">full-size screenshot</a></p>
+    </article>
+        <article>
+      <a href="fabula-ai-reorganize.png" data-lightbox data-alt="Fabula&rsquo;s AI reorganize panel: whole-document or selected-card scope, presets from Balance &amp; right-size to Di&aacute;taxis grouping, and plain-language instructions."><img class="thumb" src="fabula-ai-reorganize.png" width="280" alt="Fabula&rsquo;s AI reorganize panel: whole-document or selected-card scope, presets from Balance &amp; right-size to Di&aacute;taxis grouping, and plain-language instructions."></a>
+      <h3><a href="https://rogerawong.github.io/fabula/">Fabula: a storyboard for your docs&rsquo; navigation</a></h3>
+      <p class="role">An open-source information architecture tool that shows a documentation site&rsquo;s table of contents the way readers never see it: whole. Sections become cards on an infinite canvas; restructuring is dragging; alternative structures live in tabs for comparison; and the result writes back losslessly to the file the doc system actually reads, byte-stable where nothing changed. It speaks seven formats, DocFX to Sphinx. An optional AI layer brings the LLM in as an IA advisor: ask for the reorganization you want in plain language, or start from presets like reader journey and Di&aacute;taxis grouping. I built it in TypeScript by directing Claude agents under written charters with receipt-checked reports, and the design decision records ship in the repo. It&rsquo;s AGPL-3.0, and private by design: nothing leaves the browser except the section titles you choose to send, on your own API key.</p>
+      <p class="links"><a href="https://rogerawong.github.io/fabula/">the live app</a> · <a href="https://github.com/rogerawong/fabula">the repository</a> · <a href="https://github.com/rogerawong/fabula/tree/main/docs">the design records</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="agents">
+    <h2 id="agents">Documentation for AI agents</h2>
+    <article>
+      <h3><a href="https://github.com/rogerawong/cudaq-docs-mcp">cudaq-docs-mcp: CUDA-Q documentation, served to AI agents</a></h3>
+      <p class="role">An open-source MCP server that serves NVIDIA CUDA-Q&rsquo;s documentation to AI agents, version-pinned to the developer&rsquo;s installed package: five tools over an offline index of 109 pages, 2,589 API symbols, and 201 runnable examples. Without this MCP server, AI answers from a blend of docs from different versions of CUDA-Q, regardless of the version the developer actually has installed.  </p>
+      <p class="links"><a href="https://github.com/rogerawong/cudaq-docs-mcp">the repository</a> · <a href="https://pypi.org/project/cudaq-docs-mcp/">on PyPI</a> · <a href="https://github.com/NVIDIA/cuda-quantum/issues/5100">the upstream issue (NVIDIA/cuda-quantum #5100)</a></p>
     </article>
   </section>
 
@@ -160,43 +197,6 @@
     <a href="https://developers.meta.com/horizon/resources/publish-pdp-360previews/">360&deg; preview graphics</a> ·
     <a href="https://developers.meta.com/horizon/documentation/unreal/po-quest-boost/">Boosting CPU and GPU levels</a> ·
     <a href="https://developers.meta.com/horizon/resources/video-capture-mr-vr/">Capture MR and VR apps for publishing</a></p>
-  </section>
-
-  <section aria-labelledby="tooling">
-    <h2 id="tooling">AI-assisted publishing tooling</h2>
-    <article>
-      <h3>Editorial governance at scale</h3>
-      <p class="role">Encoded Meta&rsquo;s house style into Vale rules and custom linters used by roughly 100 engineers and writers, with publish gates that held risky changes for human review. The automated half of an editorial gate; I was the human half.</p>
-    </article>
-    <article>
-      <h3>Video-to-documentation pipeline</h3>
-      <p class="role">Built an AI pipeline converting conference-session videos into searchable, publishable developer guides, surfacing knowledge that was otherwise locked in video.</p>
-    </article>
-  </section>
-
-  <section aria-labelledby="fabula">
-    <h2 id="fabula">Information architecture tooling</h2>
-<article>
-      <a href="toc-canvas-full.png" data-lightbox data-alt="The TOC Storyboard canvas: fourteen color-coded section cards holding 377 topics of Meta&rsquo;s Distribute documentation, with minimap and AI Assist toolbar."><img class="thumb" src="toc-canvas.jpg" width="280" alt="The TOC Storyboard canvas: fourteen color-coded section cards holding 377 topics of Meta&rsquo;s Distribute documentation, with minimap and AI Assist toolbar."></a>
-      <h3>TOC Storyboard</h3>
-      <p class="role">An LLM-backed information architecture tool for visualizing and reorganizing content structures, built with Claude. Proof-of-concept in four hours; multi-user, multi-tenant prototype on Firebase three days later. As the models improved, the collaboration seat went to an LLM partner instead of a second human.</p>
-      <p class="links"><a href="toc-canvas-full.png" data-lightbox data-alt="The TOC Storyboard canvas: fourteen color-coded section cards holding 377 topics of Meta&rsquo;s Distribute documentation, with minimap and AI Assist toolbar.">full-size screenshot</a></p>
-    </article>
-        <article>
-      <a href="fabula-ai-reorganize.png" data-lightbox data-alt="Fabula&rsquo;s AI reorganize panel: whole-document or selected-card scope, presets from Balance &amp; right-size to Di&aacute;taxis grouping, and plain-language instructions."><img class="thumb" src="fabula-ai-reorganize.png" width="280" alt="Fabula&rsquo;s AI reorganize panel: whole-document or selected-card scope, presets from Balance &amp; right-size to Di&aacute;taxis grouping, and plain-language instructions."></a>
-      <h3><a href="https://rogerawong.github.io/fabula/">Fabula: a storyboard for your docs&rsquo; navigation</a></h3>
-      <p class="role">An open-source information architecture tool that shows a documentation site&rsquo;s table of contents the way readers never see it: whole. Sections become cards on an infinite canvas; restructuring is dragging; alternative structures live in tabs for comparison; and the result writes back losslessly to the file the doc system actually reads, byte-stable where nothing changed. It speaks seven formats, DocFX to Sphinx. An optional AI layer brings the LLM in as an IA advisor: ask for the reorganization you want in plain language, or start from presets like reader journey and Di&aacute;taxis grouping. I built it in TypeScript by directing Claude agents under written charters with receipt-checked reports, and the design decision records ship in the repo. It&rsquo;s AGPL-3.0, and private by design: nothing leaves the browser except the section titles you choose to send, on your own API key.</p>
-      <p class="links"><a href="https://rogerawong.github.io/fabula/">the live app</a> · <a href="https://github.com/rogerawong/fabula">the repository</a> · <a href="https://github.com/rogerawong/fabula/tree/main/docs">the design records</a></p>
-    </article>
-  </section>
-
-  <section aria-labelledby="agents">
-    <h2 id="agents">Documentation for AI agents</h2>
-    <article>
-      <h3><a href="https://github.com/rogerawong/cudaq-docs-mcp">cudaq-docs-mcp: CUDA-Q documentation, served to AI agents</a></h3>
-      <p class="role">An open-source MCP server that serves NVIDIA CUDA-Q&rsquo;s documentation to AI agents, version-pinned to the developer&rsquo;s installed package: five tools over an offline index of 109 pages, 2,589 API symbols, and 201 runnable examples. Without this MCP server, AI answers from a blend of docs from different versions of CUDA-Q, regardless of the version the developer actually has installed.  </p>
-      <p class="links"><a href="https://github.com/rogerawong/cudaq-docs-mcp">the repository</a> · <a href="https://pypi.org/project/cudaq-docs-mcp/">on PyPI</a> · <a href="https://github.com/NVIDIA/cuda-quantum/issues/5100">the upstream issue (NVIDIA/cuda-quantum #5100)</a></p>
-    </article>
   </section>
 
   <footer>
