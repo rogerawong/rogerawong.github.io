@@ -169,19 +169,20 @@
       <h3>Video-to-documentation pipeline</h3>
       <p class="role">Built an AI pipeline converting conference-session videos into searchable, publishable developer guides, surfacing knowledge that was otherwise locked in video.</p>
     </article>
-    <article>
+  </section>
+
+  <section aria-labelledby="fabula">
+    <h2 id="fabula">Information architecture tooling</h2>
+<article>
       <a href="toc-canvas-full.png" data-lightbox data-alt="The TOC Storyboard canvas: fourteen color-coded section cards holding 377 topics of Meta&rsquo;s Distribute documentation, with minimap and AI Assist toolbar."><img class="thumb" src="toc-canvas.jpg" width="280" alt="The TOC Storyboard canvas: fourteen color-coded section cards holding 377 topics of Meta&rsquo;s Distribute documentation, with minimap and AI Assist toolbar."></a>
       <h3>TOC Storyboard</h3>
       <p class="role">An LLM-backed information architecture tool for visualizing and reorganizing content structures, built with Claude. Proof-of-concept in four hours; multi-user, multi-tenant prototype on Firebase three days later. As the models improved, the collaboration seat went to an LLM partner instead of a second human.</p>
       <p class="links"><a href="toc-canvas-full.png" data-lightbox data-alt="The TOC Storyboard canvas: fourteen color-coded section cards holding 377 topics of Meta&rsquo;s Distribute documentation, with minimap and AI Assist toolbar.">full-size screenshot</a></p>
     </article>
-  </section>
-
-  <section aria-labelledby="fabula">
-    <h2 id="fabula">Information architecture tooling</h2>
-    <article>
+        <article>
+      <a href="fabula-ai-reorganize.png" data-lightbox data-alt="Fabula&rsquo;s AI reorganize panel: whole-document or selected-card scope, presets from Balance &amp; right-size to Di&aacute;taxis grouping, and plain-language instructions."><img class="thumb" src="fabula-ai-reorganize.png" width="280" alt="Fabula&rsquo;s AI reorganize panel: whole-document or selected-card scope, presets from Balance &amp; right-size to Di&aacute;taxis grouping, and plain-language instructions."></a>
       <h3><a href="https://rogerawong.github.io/fabula/">Fabula: a storyboard for your docs&rsquo; navigation</a></h3>
-      <p class="role">An open-source information architecture tool that shows a documentation site&rsquo;s table of contents the way readers never see it: whole. Sections become cards on an infinite canvas; restructuring is dragging; alternative structures live in tabs for comparison; and the result writes back losslessly to the file the doc system actually reads, byte-stable where nothing changed. It speaks seven formats, DocFX to Sphinx. I built it in TypeScript by directing Claude agents under written charters with receipt-checked reports, and the design decision records ship in the repo. It&rsquo;s AGPL-3.0, and private by design: the TOC never leaves the browser.</p>
+      <p class="role">An open-source information architecture tool that shows a documentation site&rsquo;s table of contents the way readers never see it: whole. Sections become cards on an infinite canvas; restructuring is dragging; alternative structures live in tabs for comparison; and the result writes back losslessly to the file the doc system actually reads, byte-stable where nothing changed. It speaks seven formats, DocFX to Sphinx. An optional AI layer brings the LLM in as an IA advisor: ask for the reorganization you want in plain language, or start from presets like reader journey and Di&aacute;taxis grouping. I built it in TypeScript by directing Claude agents under written charters with receipt-checked reports, and the design decision records ship in the repo. It&rsquo;s AGPL-3.0, and private by design: nothing leaves the browser except the section titles you choose to send, on your own API key.</p>
       <p class="links"><a href="https://rogerawong.github.io/fabula/">the live app</a> · <a href="https://github.com/rogerawong/fabula">the repository</a> · <a href="https://github.com/rogerawong/fabula/tree/main/docs">the design records</a></p>
     </article>
   </section>
